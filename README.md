@@ -4,6 +4,10 @@
 
 - npm install -S react-router-dom
 - npm install bootstrap --save
+- npm i react-redux
+- npm i redux
+- **Dev Dependency**
+- npm i redux-immutable-state-invariant --save-dev
 
 # 9.0 Redux Flow
 
