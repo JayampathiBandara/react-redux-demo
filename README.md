@@ -11,3 +11,4 @@
 - - 9.1.2 USE Arrow function and remove constructor
 - 9.2 submit form with prevent default
 - 9.3 Create Action
+- 9.4 Create Reducer
