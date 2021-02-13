@@ -17,3 +17,4 @@
 - 9.3 Create Action
 - 9.4 Create Reducer
 - 9.5 CREATE ROOT Reducer using Combine Reducer
+- 9.6 Create and configure STORE
