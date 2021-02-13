@@ -9,3 +9,4 @@
 
 - 9.1 Add course form and bind change handler inside constructor
 - - 9.1.2 USE Arrow function and remove constructor
+- 9.2 submit form with prevent default
