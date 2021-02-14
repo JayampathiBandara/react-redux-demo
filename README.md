@@ -20,3 +20,4 @@
 - 9.6 Create and configure STORE
 - 9.7 call createAction in coursepage.js
 - 9.8 Improve coursepage.js - pass custom dispatch function to connect
+- 9.9 use bindActionCreator redux helper function to bind dispatch

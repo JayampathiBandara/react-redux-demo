@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import * as courseActions from "../../redux/action/courseActions";
+import { bindActionCreators } from "redux";
 
 class CoursesPage extends React.Component {
   state = {
@@ -19,7 +20,8 @@ class CoursesPage extends React.Component {
     event.preventDefault();
     //alert(this.state.course.title);
     //this.props.dispatch(courseActions.createCourse(this.state.course));
-    this.props.createCourse(this.state.course);
+    // method 1 : this.props.createCourse(this.state.course);
+    this.props.actions.createCourse(this.state.course);
   };
 
   render() {
@@ -44,7 +46,8 @@ class CoursesPage extends React.Component {
 
 CoursesPage.propTypes = {
   //dispatch: PropTypes.func.isRequired,
-  createCourse: PropTypes.func.isRequired,
+  // method 1: createCourse: PropTypes.func.isRequired,
+  actions: PropTypes.object.isRequired,
   courses: PropTypes.array.isRequired,
 };
 
@@ -57,7 +60,8 @@ function mapStateToProps(state /*,ownProps*/) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    createCourse: (course) => dispatch(courseActions.createCourse(course)),
+    //method 1 : createCourse: (course) => dispatch(courseActions.createCourse(course)),
+    actions: bindActionCreators(courseActions, dispatch),
   };
 }
 // when we omit "mapDispatchToProps" dispatch  property inject automatically
