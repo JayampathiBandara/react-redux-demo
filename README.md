@@ -19,3 +19,4 @@
 - 9.5 CREATE ROOT Reducer using Combine Reducer
 - 9.6 Create and configure STORE
 - 9.7 call createAction in coursepage.js
+- 9.8 Improve coursepage.js - pass custom dispatch function to connect
